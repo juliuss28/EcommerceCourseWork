@@ -1,7 +1,9 @@
 package com.example.ecommercecoursework
 
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import com.example.ecommercecoursework.databinding.ProductDetailsBinding
 
 
@@ -16,6 +18,17 @@ class ProductDetails : AppCompatActivity() {
         setContentView(view)
         val title = intent.getStringExtra("title")
         binding.productName.text = title
-        binding.availability
+        binding.availability.setOnClickListener{
+            AlertDialog.Builder(this)
+                .setMessage("$title есть в наличии!")
+                .setPositiveButton("Ок", object : DialogInterface.OnClickListener {
+                    override fun onClick(p0: DialogInterface?, p1: Int) {
+
+                    }
+                })
+                .create()
+                .show()
+
+        }
     }
 }
