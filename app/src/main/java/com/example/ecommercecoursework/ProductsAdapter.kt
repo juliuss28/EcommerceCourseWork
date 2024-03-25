@@ -24,7 +24,7 @@ class ProductsAdapter(private val products: ArrayList<Product>) :
         val holder = ViewHolder(view)
         view.setOnClickListener {
             val intent = Intent(parent.context, ProductDetails::class.java)
-            intent.putExtra("name", products[holder.adapterPosition].title)
+            intent.putExtra("title", products[holder.adapterPosition].title)
             parent.context.startActivity(intent)
         }
         return holder

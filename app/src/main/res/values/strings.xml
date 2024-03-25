@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Juliuss Course Work</string>
     <string name="availability">Проверить наличие</string>
+    <string name="product_details">Подробнее</string>
 </resources>
