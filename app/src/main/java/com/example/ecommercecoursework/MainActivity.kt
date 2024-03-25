@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val products = arrayListOf<Product>()
         for (i in 0..100) {
-            products.add(Product(title = "Яблоко", photoUrl = "https://placehold.co/200x200/dddddd/000000.png", price = 1.99))
+            products.add(Product(title = "Рубашка #$i", photoUrl = "https://placehold.co/200x200/dddddd/000000.png", price = 1.99))
 
         }
 
