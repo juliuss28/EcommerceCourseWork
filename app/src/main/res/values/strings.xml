@@ -3,4 +3,5 @@
     <string name="availability">Проверить наличие</string>
     <string name="product_details">Подробности</string>
     <string name="size">Выбрать размер:</string>
+    <string name="menu_settings">Настройки</string>
 </resources>
