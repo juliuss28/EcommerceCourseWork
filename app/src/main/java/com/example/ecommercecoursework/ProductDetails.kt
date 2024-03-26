@@ -23,7 +23,6 @@ class ProductDetails : AppCompatActivity() {
                 .setMessage("$title есть в наличии!")
                 .setPositiveButton("Ок", object : DialogInterface.OnClickListener {
                     override fun onClick(p0: DialogInterface?, p1: Int) {
-
                     }
                 })
                 .create()
